@@ -1,0 +1,21 @@
+{
+  "name": "inventory-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongodb-memory-server": "^11.0.1",
+    "mongoose": "^9.4.1"
+  },
+  "description": "```\r domain/entities             -->  Entities\r domain/repositories         -->  Entities (contrato/interfaz)\r application/usecases        -->  Use Cases\r infrastructure/config       -->  Frameworks & Drivers (composition root)\r infrastructure/controllers  -->  Interface Adapters\r infrastructure/repositories -->  Interface Adapters (gateway)\r infrastructure/routes       -->  Frameworks & Drivers\r ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
